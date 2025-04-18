@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" type="text/javsscript">
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css">
+    <style>
+
+        
+        th{
+            border-radius: 5px;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .ae{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+        }
+        button{
+            background-color: black;
+        }
+        .c{
+            background-color: black;
+            color: white;
+        }
+        .tt1{
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .divv{
+            color: white;
+            border: 5px groove cyan;
+            border-spacing: 5px;
+            vertical-align: top;
+            margin-top: 0px;
+            border-radius: 10px;
+            border-color: black;
+            font-size: 20px;
+            font-weight: 300;
+           }
+        
+        .tabl{
+            margin-top: 200px;
+            border-radius: 10px;
+            border: 7px groove;
+            animation: circle 2s linear infinite;
+            border-top-color: red;
+            border-bottom-color:deeppink;
+            border-left-color: yellow;
+            border-right-color: cyan;
+
+            
+        }
+        @keyframes circle {
+            25%{
+            border-top-color: cyan;
+            border-right-color:deeppink;
+            border-bottom-color: yellow;
+            border-left-color: red;
+            }
+            50%{
+            border-right-color: cyan;
+            border-bottom-color:deeppink;
+            border-left-color: yellow;
+            border-top-color: red;
+            }
+            75%{
+            border-bottom-color: cyan;
+            border-left-color:deeppink;
+            border-top-color: yellow;
+            border-right-color: red;
+            }
+            100%{
+            border-left-color: cyan;
+            border-top-color:deeppink;
+            border-right-color: yellow;
+            border-bottom-color: red;
+            }
+            
+        }
+        .tab1{
+            color: white;
+            border: 5px groove cyan;
+            border-spacing: 5px;
+            vertical-align: top;
+            margin-top: 0px;
+            border-radius: 10px;
+            border-left-color: rgb(233, 44, 44);
+            border-bottom-color:rgb(117, 212, 21);
+            border-right-color: rgb(226, 226, 27);
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .tab1:hover{
+            transition: 0.7s ease-in-out;
+            
+            box-shadow: 0px 10px 30px  rgb(255, 255, 141) ;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        details{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+       function back(){
+            window.history.go(-1);
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <div class="divv">
+        <table border="2px" align="left" class="tab1">
+            <tr>
+                <th class="tt1">
+                    <a href="home.html" class="ae"><i class="fa-solid fa-house fa-beat"></i> Home</a> 
+                </th>
+                <th class="tt1">
+                   <a href="rules.html" class="ae"><i class="fa-solid fa-hand-sparkles fa-beat"></i> Rules</a>
+                </th>
+                <th class="tt1">
+                   <a href="help.html" class="ae"><i class="fa-solid fa-circle-question fa-beat""></i> Help</a>
+                </th>
+            </tr>
+        </table>
+        </div>
+    <table border="2px" align="center" width="360px" class="tabl">
+        <tr>
+            <th>Help</th>
+        </tr>   
+        <tr>
+            <th><details>
+                <summary>How Can Start Game ?</summary>
+                
+                <img src="start.jpg" height="150px" width="130px"><br>
+                First,Please Select Your Subject For Play Game.
+            </details>
+            </th>
+        </tr> 
+
+        <tr>
+            <th><details>
+                <summary>What Can Do After Select Subject ?</summary>
+                <img src="play1.jpg" height="150px" width="130px">
+                <br>
+                After Select Subject Select Your Level.
+            </details>
+            </th>
+        </tr>
+
+        <tr>
+            <th><details>
+                <summary>How To Play In Programming ?</summary>
+                <img src="prog.jpg" height="150px" width="130px">
+                <br>
+                Simply You have To Select Correct Answer.
+            </details>
+            </th>
+        </tr>
+
+        <tr>
+            <th><details>
+                <summary>How To Play In Mathematics ?</summary>
+                <img src="math.jpg" height="150px" width="130px">
+                <br>
+                Simply You have To Calculate Answer And Write Them.
+            </details>
+            </th>
+        </tr>
+
+        <tr>
+            <th><details>
+                <summary>How Can We Contact You ?</summary>
+                <img src="cont.jpg" height="180px" width="130px">
+                <br>
+                  First, Click On Contact After Open Menu.
+            </details>
+            </th>
+        </tr>
+       
+        <tr>
+            <th><button type="button" class="ae" onclick="back()"><font size="5px"><i class="fa-solid fa-arrow-left fa-beat-fade"></i></font></button>
+
+            </th>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

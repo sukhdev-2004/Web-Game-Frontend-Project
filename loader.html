@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    
+    <script>
+        var seconds = 0;
+        function dispseconds(){
+            seconds +=1;
+            document.getElementById("secondsdisp").innerText = "Please Wait "+seconds+" .";
+        }
+        setInterval(dispseconds,3000);
+        function redirect(){
+            window.location = "prog.html";
+        }
+        setTimeout('redirect()',3000);
+    </script>
+    <link rel="stylesheet" type="text/css">
+    <style>
+        .im{
+            margin-top: 150px;
+            margin-bottom: 0px;
+            border-radius: 20px;
+        }
+        body{
+            background-color: rgb(48, 32, 32);
+        }
+    </style>
+</head>
+<body bgcolor="black" >
+    <center>
+        
+    
+    <div id="secondsdisp">
+        <video src="gameload.gif" autoplay loop muted height="400px" width="400px" class="im"></video>
+    </div>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" type="text/javsscript">
+    
+    <link rel="stylesheet" type="text/css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        nav{
+        
+         height: 80px;
+         width: 100%;   
+        }
+      
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: #1b9bff;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 29px;
+            color: black;
+            float: left;
+            margin-top: 20px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 25px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 35%;
+                border-radius: 10px;
+                height: 100vh;
+                background: yellow;
+                top: 80px;
+                left: -100%;
+                transition: all .5s;
+                text-align: center;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a:hover,a.active{
+                background-color: #1b9bff;
+                
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">&nbsp;<i class="fa-solid fa-bars">&nbsp;</i> </label>
+    
+    <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i> <b>Home</b></a></li>
+        <li><a href="cont.html"><i class="fa-solid fa-id-card"></i> <b>Contact</b></a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-question"></i> <b>Help</b></a></li>
+        <li><a href="rules.html"><i class="fa-solid fa-hand-sparkles"></i> <b>Rules</b></a></li>
+    </ul>
+    </nav>
+</body>
+</html>

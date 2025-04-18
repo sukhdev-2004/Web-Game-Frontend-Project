@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" type="text/javsscript">
+    
+    <script>
+
+        alert("Level Can Be Hard One By One In Sequence.");
+    </script>
+    <link rel="stylesheet" type="text/css">
+    <style>
+    #my{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-blend-mode: overlay;
+        }
+        #myv{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            z-index: -3;
+        }
+        .tab2{
+            color: white;
+            border: 7px solid cyan;
+            border-spacing: 15px;
+            position: block;
+            margin-top: 70px;
+            margin-left: 40%;
+            animation: circle 1s infinite;
+            border-radius: 10px;
+             
+            font-size: 20px;
+            font-weight: 300;
+            height: 250px;
+            width: 250px;
+           
+                 
+        }
+        @keyframes circle {
+            25%{
+            border-top-color: cyan;
+            border-right-color:deeppink;
+            border-bottom-color: yellow;
+            border-left-color: red;
+            }
+            50%{
+            border-right-color: cyan;
+            border-bottom-color:deeppink;
+            border-left-color: yellow;
+            border-top-color: red;
+            }
+            75%{
+            border-bottom-color: cyan;
+            border-left-color:deeppink;
+            border-top-color: yellow;
+            border-right-color: red;
+            }
+            100%{
+            border-left-color: cyan;
+            border-top-color:deeppink;
+            border-right-color: yellow;
+            border-bottom-color: red;
+            }
+            
+        }
+        .tab2:hover{
+            transition: 0.7s ease-in-out;
+            
+            box-shadow: 0px 10px 30px  rgb(255, 255, 141) ;
+           
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        .th1:hover{
+            transition: 1s;
+            height: 60px;
+            
+        }
+        .th1{
+            border-radius: 5px;
+            border-right-color: rgb(233, 44, 44);
+            border-top-color:cyan;
+            border-bottom-color:green;
+            border-left-color:yellow ;
+        
+        }
+       
+        .tt1{
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        nav{
+        
+         height: 80px;
+         width: 100%;   
+        }
+      
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .checkbtn{
+            font-size: 29px;
+            color: black;
+            float: left;
+            margin-top: 20px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 25px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 900px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 35%;
+                border-radius: 10px;
+                height: 100vh;
+                background: black;
+                top: 80px;
+                left: -100%;
+                transition: all .5s;
+                text-align: center;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+<section id="my">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">&nbsp;<i class="fa-solid fa-bars">&nbsp;</i> </label>
+    
+    <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i> <b>Home</b></a></li>
+        <li><a href="cont.html"><i class="fa-solid fa-id-card"></i> <b>Contact</b></a></li>
+        <li><a href="help.html"><i class="fa-solid fa-circle-question"></i> <b>Help</b></a></li>
+        <li><a href="rules.html"><i class="fa-solid fa-hand-sparkles"></i> <b>Rules</b></a></li>
+    </ul>
+    </nav>
+  
+<video src="prog.gif" id="myv" autoplay loop muted></video>
+ <br>
+
+<table border="2px" bordercolor="cyan" align="center" class="tab2">
+    <tr>
+        <th colspan="2" class="th1"> Select Level </th>
+    </tr>
+    <tr>
+        <th class="th1"><a href="p1.html">&nbsp;Level 1&nbsp;</a></th>
+   
+        <th class="th1"><a href="p2.html">&nbsp;Level 2&nbsp;</a></th>
+    </tr>
+    <tr>
+        <th class="th1"><a href="p3.html">&nbsp;Level 3&nbsp;</a></th>
+   
+        <th class="th1"><a href="p4.html">&nbsp;Level 4&nbsp;</a></th>
+    </tr>
+    <tr>
+        <th colspan="2"><a href="home.html">&nbsp;Back&nbsp;</a></th>
+    </tr>    
+</table>
+</section>
+</body>
+</html>

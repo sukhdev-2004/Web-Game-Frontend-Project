@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Programming</title>
+    <script>
+        alert("Check Them Correct Or Not");
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" type="text/javsscript">
+    <link rel="stylesheet" type="text/css">
+    <style>
+        body{
+            background-color: pink;
+            color: navy;
+        }
+        .tabl{
+            font-size: 20px;
+            font-weight: 300;
+           cursor: pointer;
+           animation: blink 1s linear infinite;
+            border-spacing: 15px;
+            position: relative;
+            margin-bottom: 0px;
+            margin-left: 48%;
+            margin-top: 50px;
+            border: 7px solid cyan;
+            border-radius: 55%;
+            border-top-color: darkorange;
+            border-bottom-color: yellow;
+            border-left-color: green;
+            color: red;
+            background-color: chartreuse;
+
+        }
+        @keyframes blink {
+            20%{
+            border-top-color: green;
+            border-right-color:deeppink;
+            border-bottom-color: yellow;
+            border-left-color: red;
+            }
+            60%{
+            border-right-color: green;
+            border-bottom-color:deeppink;
+            border-left-color: yellow;
+            border-top-color: red;
+            }
+            80%{
+            border-bottom-color: green;
+            border-left-color:deeppink;
+            border-top-color: yellow;
+            border-right-color: red;
+            }
+            100%{
+            border-left-color: green;
+            border-top-color:deeppink;
+            border-right-color: yellow;
+            border-bottom-color: red;
+            }
+            
+        }
+        .t1{
+            border:none;
+        }
+        th{
+            border: 2px inset;
+            border-width: 3px;
+            border-radius: 8px;
+            animation: circle 2s infinite;
+        }
+        .table1{
+            font-size: 20px;
+            font-family:sans-serif;
+            font-weight: 300;
+            width: 450px;
+            border-spacing: 20px;
+            animation: circle 3s linear infinite;
+            position: block;
+            margin-bottom: 30px;
+            border: 7px solid;
+            border-radius: 10px;
+            border-top-color: rgb(129, 176, 227);           
+            border-bottom-color: rgb(42, 94, 184);
+            border-left-color: cyan;
+            border-right-color: rgb(122, 245, 0);
+            color: black;
+            margin-left: 33%;
+            }
+            @keyframes circle {
+            20%{
+            border-top-color: rgb(122, 245, 0);
+            border-right-color: rgb(42, 94, 184);
+            border-bottom-color: cyan;
+            border-left-color: rgb(129, 176, 227);
+             }
+            60%{
+            border-right-color: rgb(122, 245, 0);
+            border-bottom-color: rgb(42, 94, 184);
+            border-left-color: cyan;
+            border-top-color: rgb(129, 176, 227);
+            }
+            80%{
+            border-bottom-color: rgb(122, 245, 0);
+            border-left-color: rgb(42, 94, 184);
+            border-top-color: cyan;
+            border-right-color: rgb(129, 176, 227);
+            }
+            100%{
+            border-left-color: rgb(122, 245, 0);
+            border-top-color: rgb(42, 94, 184);
+            border-right-color: cyan;
+            border-bottom-color: rgb(129, 176, 227);
+            }
+        }
+
+        th:hover{
+            transition: 0.7s ease-in-out;
+            box-shadow: 0px 5px 20px orange;
+        }
+       
+        .c1{
+            background-color: pink;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            accent-color: red;
+        
+            cursor: pointer;
+        }
+        .c3{
+            background-color: pink;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            cursor: pointer;
+        }
+        #c4{
+            height: 10px;
+            width: 10px;
+        }
+        
+        .c2{
+            background-color: pink;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 300;
+            }
+            .vid{
+                height: 40px;
+                width: 170px;
+                border: none;
+                border-radius: 50px;
+            }
+            .vidtab{
+                border: none;
+
+            }
+            
+           .tab1{
+            color: white;
+            position: fixed;
+            border: 5px groove cyan;
+            border-spacing: 5px;
+            margin-left: 50px;
+            margin-top: 0px;
+            border-radius: 10px;
+            border-left-color: rgb(233, 44, 44);
+            border-bottom-color:rgb(117, 212, 21);
+            border-right-color: rgb(226, 226, 27);
+            font-size: 20px;
+            font-weight: 300;
+        
+        }
+        .tab1:hover{
+            transition: 0.7s ease-in-out;
+            
+            box-shadow: 0px 10px 30px  rgb(255, 255, 141) ;
+        }
+        .tt1{
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        .na{
+        
+         height: 60px;
+            
+        }
+      
+        .na ul{
+            float: right;
+            margin-right: 20px;
+        }
+        .na ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        .na ul li a{
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .checkbtn{
+            font-size: 29px;
+            color: black;
+            float: left;
+            margin-top: 20px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 25px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            
+            .na ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 900px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 35%;
+                border-radius: 10px;
+                height: 100vh;
+                background: white;
+                top: 80px;
+                left: -100%;
+                transition: all .5s;
+                text-align: center;
+            }
+            .na ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .na ul li a{
+                font-size: 20px;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body onload="abc()">
+    <form name="myform">
+        <div class="na">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">&nbsp;<i class="fa-solid fa-bars">&nbsp;</i> </label>
+        
+        <ul>
+            <li><a href="home.html"><i class="fa-solid fa-house"></i> <b>Home</b></a></li>
+            <li><a href="cont.html"><i class="fa-solid fa-id-card"></i> <b>Contact</b></a></li>
+            <li><a href="help.html"><i class="fa-solid fa-circle-question"></i> <b>Help</b></a></li>
+            <li><a href="rules.html"><i class="fa-solid fa-hand-sparkles"></i> <b>Rules</b></a></li>
+        </ul>
+        </nav>
+        </div>
+    <table border="2px" align="center" class="tabl">
+        <tr>
+    <th class="t1"><div id="demo" class="time">0</div></th>
+    </tr> 
+    
+    </table>
+    <br>
+    <form name="game">
+        <div class="conn">
+    <table border="2px" align="center" class="table1">
+        <tr>
+            <th>
+                1. Array Index Start With 0. <br>
+                <input type="radio" value="r" onclick="audio.play();" name="q0" class="c1" id="q0"><label for="q0"><lable id="q0-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="w" onclick="audio.play();" name="q0" class="c1" id="q1"><label for="q1"><lable id="q0-1"> False</lable></label>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                2. %.2f Is Identifier For float Datatype.<br>
+                <input type="radio" value="w" onclick="audio.play();" name="q1" class="c1" id="q2"><label for="q2"><lable id="q1-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q1" class="c1" id="q3"><label for="q3"><lable id="q1-1"> False</lable></label>
+             </th>
+        </tr>
+        <tr>
+            <th>
+                3. + Is Relational Operator. <br>
+                <input type="radio" value="w" onclick="audio.play();" name="q2" class="c1" id="q4"><label for="q4"><lable id="q2-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q2" class="c1" id="q5"><label for="q5"><lable id="q2-1"> False</lable></label> </th>
+        </tr>
+
+        <tr>
+            <th>
+                4. ~ Is Bitwise Operator.<br>
+                <input type="radio" value="r" onclick="audio.play();" name="q3" class="c1" id="q6"><label for="q6"><lable id="q3-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="w" onclick="audio.play();" name="q3" class="c1" id="q7"><label for="q7"><lable id="q3-1"> False</lable></label></th>
+        </tr>
+        <tr>
+            <th>
+                5. ! Is Logical Or Operator.<br>
+                <input type="radio" value="w" onclick="audio.play();" name="q4" class="c1" id="q8"><label for="q8"><lable id="q4-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q4" class="c1" id="q9"><label for="q9"><lable id="q4-1"> False</lable></label></th>
+        </tr>
+
+        <tr>
+            <th>
+                6. new Is Operator.<br>
+                <input type="radio" value="r" onclick="audio.play();" name="q5" class="c1" id="q10"><label for="q10"><lable id="q5-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="w" onclick="audio.play();" name="q5" class="c1" id="q11"><label for="q11"><lable id="q5-1"> False</lable></label></th>
+        </tr>
+        <tr>
+            <th>
+                7. var Is Datatype.<br>
+                <input type="radio" value="w" onclick="audio.play();" name="q6" class="c1" id="q12"><label for="q12"><lable id="q6-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q6" class="c1" id="q13"><label for="q13"><lable id="q6-1"> False</lable></label></th>
+        </tr>
+
+        <tr>
+            <th>
+                8. Abs() Is String Object.<br>
+                <input type="radio" value="w" onclick="audio.play();" name="q7" class="c1" id="q14"><label for="q14"><lable id="q7-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q7" class="c1" id="q15"><label for="q15"><lable id="q7-1"> False</lable></label> </th>
+        </tr>
+        <tr>
+            <th>
+                9. There Are Only Two Ways To Add CSS.<br>
+                <input type="radio" value="w" onclick="audio.play();" name="q8" class="c1" id="q16"><label for="q16"><lable id="q8-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="r" onclick="audio.play();" name="q8" class="c1" id="q17"><label for="q17"><lable id="q8-1"> False</lable></label></th>
+        </tr>
+
+        <tr>
+            <th>
+                10. Object Creating Using new Operator.<br>
+                <input type="radio" value="r" onclick="audio.play();" name="q9" class="c1" id="q18"><label for="q18"><lable id="q9-0"> &nbsp;True</lable></label><br>
+                <input type="radio" value="w" onclick="audio.play();" name="q9" class="c1" id="q19"><label for="q19"><lable id="q9-1"> False</lable></label> </th>
+        </tr>
+        <tr>
+            <th><font color="green"><i class="fa-regular fa-circle-check fa-beat-fade fa-2xs"></i></font> :<input type="text" class="c1" readonly name="an1" placeholder=" Correct"></th>
+        </tr>
+        <tr>
+            <th><font color="red"><i class="fa-regular fa-circle-xmark fa-beat-fade fa-2xs"></i></font> :<input type="text" class="c1" readonly name="an2" placeholder=" Wrong"></th>
+        </tr>
+        <tr>
+            <th><button type="submit" class="c3"><i class="fa-sharp fa-solid fa-rotate-right fa-spin fa-xl"></i></button></th>
+           
+        </tr>
+        <tr>
+           <th> <button type="button" class="c3" onclick="disp()"><font color="black" size="2px"><b><i class="fa-solid fa-bars fa-beat fa-lg"> Result</b></font></i></button></th>
+           
+        </tr>
+        <tr>
+            <th><a href="prog.html"><font color="black"><i class="fa-solid fa-backward fa-beat fa-xs"> Back</font></i></a></th>
+           
+        </tr>
+       
+    </table>
+    </div>
+    </form>
+   <script>
+         const audio = new Audio();
+              audio.src = "demo.mp3";{
+            
+                function disp() {
+            
+                    var r = 0,w = 0;
+                  var wrong, right;
+               for (let i=0;i<10;i++) {
+                var quiz = "q" + i;
+                var options = document.getElementsByName(quiz);
+                var que = document.getElementById(quiz);
+                for (let j=0;j<=1;j++) {
+                    if (options[j].value == "r") {
+                      if (options[j].checked){
+                        right = document.getElementById(quiz + "-" + j);
+                        right.style.backgroundColor = "lightgreen";
+                      }
+                            if (options[j].checked) {
+                             r++;
+                             }
+                            else{
+                              w++;
+                            }
+                        }
+                        else {
+                          if (options[j].value == "w") { 
+                             if (options[j].checked) {
+                            wrong = document.getElementById(quiz + "-" + j);
+                            wrong.style.backgroundColor = "rgb(230, 85, 85)";}
+                             }
+                
+              }
+       
+              document.myform.an1.value = r;
+          document.myform.an2.value = w;
+            }
+        }
+    }
+     var x = 101 ;
+    function abc(){
+       
+        x--;
+        document.getElementById("demo").innerHTML = x;
+        setTimeout("abc()",1000);
+        if(x==21){
+            swal({
+            title: "Warning",
+            text: "You Have Only 30 Seconds",
+            icon: "warning",
+            button: "Ok",
+            }); 
+        }
+       
+        if(x==-1){
+            
+          document.write("<center><h1><body bgcolor = pink color = navy>Your Time Out !</h1></center>");
+            document.write("<center><form><input type=submit value = Retry></form></center>")
+            
+            }
+         }
+        }
+         </script>
+</body>
+</html>

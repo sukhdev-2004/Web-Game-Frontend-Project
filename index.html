@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" type="text/javsscript">
+    
+    
+       <script>
+        var seconds = 0;
+        function dispseconds(){
+            seconds +=1;
+            document.getElementById("secondsdisp").innerText = "Please Wait "+seconds+" .";
+        }
+        setInterval(dispseconds,5900);
+        function redirect(){
+            window.location = "home.html";
+        }
+        setTimeout('redirect()',5900);
+    </script>   
+    <link rel="stylesheet" type="text/css">
+    <style>
+        
+       body{
+        background-color: rgb(53, 53, 224);
+        margin-top: 250px;
+       }
+    </style>
+</head>
+<body bgcolor="blue" >
+    <center>
+        
+    
+    <div id="secondsdisp">
+        <video src="game.gif" autoplay loop muted class="im" height="40px" width="410px" >
+        </div>
+        <div class="se">
+        <font color="white" align="center"><h2 ><video src="welcome.gif" autoplay loop muted class="im" height="40px" width="410px" ></video></h2></font>
+    </center>
+    
+</body>
+</html>
